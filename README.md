@@ -2,6 +2,14 @@
 
 > Landing page profissional e de alta conversão para o Studio Mimimei Beauty Academy, localizado em Osasco/SP.
 
+[![Demonstração na Vercel](https://img.shields.io/badge/Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://studio-mimimei-landing-page.vercel.app/)
+[![React 19](https://img.shields.io/badge/React-19.x-blue?style=for-the-badge&logo=react)](https://react.dev/)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.x-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.x-black?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+
+🔗 **Deploy / Demonstração:** [https://studio-mimimei-landing-page.vercel.app/](https://studio-mimimei-landing-page.vercel.app/)
+
 ![Studio Mimimei](https://images.unsplash.com/photo-1560869713-7d0a29430803?w=1200&q=80&fit=crop)
 
 ---
@@ -44,6 +52,9 @@ studio-mimimei/
 │   │   ├── Team.jsx             # 3 cards de profissionais com portfólio
 │   │   ├── Info.jsx             # Políticas, comodidades e pagamentos
 │   │   └── Footer.jsx           # Contato, horários e CTA final
+│   ├── components/
+│   │   └── icons/
+│   │       └── InstagramIcon.jsx # Ícone SVG modular e reutilizável
 │   ├── App.jsx                  # Componente raiz — orquestra todas as seções
 │   ├── main.jsx                 # Entry point React
 │   └── index.css                # Design system (tokens CSS + Tailwind v4)
