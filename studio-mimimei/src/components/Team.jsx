@@ -1,17 +1,9 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Camera } from 'lucide-react';
+import InstagramIcon from './icons/InstagramIcon';
 
-// Inline SVG icon — Instagram not available in this lucide-react version
-function Instagram({ className = 'w-4 h-4' }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-      <circle cx="12" cy="12" r="4"/>
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-    </svg>
-  );
-}
+
 
 const team = [
   {
@@ -97,6 +89,7 @@ function ProcedurePhoto({ procedure, delay }) {
       <img
         src={procedure.img}
         alt={procedure.alt}
+        loading="lazy"
         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-violet-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -180,7 +173,7 @@ function TeamCard({ member, index }) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm text-violet-600 font-medium hover:text-violet-800 transition-colors"
         >
-          <Instagram className="w-4 h-4" />
+          <InstagramIcon className="w-4 h-4" />
           Ver portfólio no Instagram
         </a>
       </div>

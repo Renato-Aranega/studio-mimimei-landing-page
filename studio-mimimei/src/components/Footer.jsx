@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import InstagramIcon from './icons/InstagramIcon';
 import {
   MapPin,
   Clock,
@@ -8,16 +9,7 @@ import {
   Phone,
 } from 'lucide-react';
 
-// Inline SVG icon — Instagram not available in this lucide-react version
-function Instagram({ className = 'w-4 h-4' }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-      <circle cx="12" cy="12" r="4"/>
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-    </svg>
-  );
-}
+
 
 const BOOKING_URL = 'https://www.trinks.com/studioborges-beautyacademy';
 const INSTAGRAM_URL = 'https://www.instagram.com/studio.mimimei';
@@ -98,7 +90,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-violet-600 text-white text-sm font-medium px-4 py-2.5 rounded-xl hover:opacity-90 transition-opacity"
             >
-              <Instagram className="w-4 h-4" />
+              <InstagramIcon className="w-4 h-4" />
               @studio.mimimei
             </a>
           </motion.div>
@@ -140,7 +132,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 group"
               >
-                <Instagram className="w-5 h-5 text-violet-400 shrink-0 group-hover:text-pink-400 transition-colors" />
+                <InstagramIcon className="w-5 h-5 text-violet-400 shrink-0 group-hover:text-pink-400 transition-colors" />
                 <span className="text-violet-300/80 text-sm group-hover:text-violet-200 transition-colors">
                   instagram.com/studio.mimimei
                 </span>
